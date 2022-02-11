@@ -9,6 +9,79 @@ body {
   height: 100%;
 }
 
+.container {
+  width: 100%;
+  height: 100%;
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   background-image: url("../assets/background/background.png");
+}
+
+.gameboy_box {
+  position: relative;
+  border-top: solid #5f57c2 3px;
+  border-right: solid #5f57c2 3px;
+  border-bottom: solid #5f57c2 3px;
+  border-left: solid #2a8acd 3px;
+  height: 80%;
+  width: 23%;
+  background-color: #5bd4fc;
+  border-radius: 25px;
+}
+
+.gameboy_connector {
+  position: absolute;
+  background-color: #5bd4fc;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  top: -2.25vh;
+  left: 85%;
+}
+
+.gameboy_connector .top {
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-top: solid #5f57c2 3px;
+  border-left: solid #5f57c2 3px;
+  border-right: solid #5f57c2 3px;
+  height: 1.95vh;
+  width: 2vw;
+}
+
+.gameboy_connector .bottom {
+  height: 3vh;
+  width: 2vw;
+}
+
+.gameboy_box img {
+  position: relative;
+  margin-left: -23vw;
+
+  z-index: -1;
+}
+
+.buttons {
+  top: 16%;
+  right: -3%;
+  position: absolute;
+  height: 80vh;
+  width: 0.5vw;
+}
+
+.button_bottom {
+  border: solid 1px black;
+  height: 7vh;
+  margin-top: 5vh;
+  background-color: #a05fd7;
+}
+
+.button_top {
+  border: solid 1px black;
+  height: 7vh;
+  background-color: #a05fd7;
 }
