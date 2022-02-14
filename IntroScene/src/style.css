@@ -28,8 +28,8 @@ body {
   border-right: solid #5f57c2 3px;
   border-bottom: solid #5f57c2 3px;
   border-left: solid #2a8acd 3px;
-  height: 80%;
-  width: 23%;
+  height: 83%;
+  width: 24%;
   background-color: #5bd4fc;
   border-radius: 25px;
 }
@@ -60,12 +60,11 @@ body {
 
 .gameboy_box img {
   position: relative;
-  margin-left: -23vw;
-
-  z-index: -1;
+  margin-left: -25vw;
+  z-index: 1;
 }
 
-.buttons {
+.side_buttons {
   top: 16%;
   right: -3%;
   position: absolute;
@@ -84,4 +83,50 @@ body {
   border: solid 1px black;
   height: 7vh;
   background-color: #a05fd7;
+}
+
+#long_line {
+  position: absolute;
+  padding: 5px;
+  background-color: #279ffd;
+  top: 5%;
+  width: 85%;
+  left: -3%;
+  border-top: solid #2a8acd 2px;
+  border-bottom: solid #2a8acd 2px;
+  border-right: solid #2a8acd 2px;
+}
+
+#short_line {
+  position: absolute;
+  padding: 5px;
+  background-color: #279ffd;
+  top: 5%;
+  left: 89%;
+  width: 5%;
+  border-top: solid #2a8acd 2px;
+  border-bottom: solid #2a8acd 2px;
+  border-right: solid #2a8acd 2px;
+  border-left: solid #2a8acd 2px;
+}
+
+#screenframe {
+  width: 18.5vw;
+  height: 29.5vh;
+  background-color: #279ffd;
+  border-radius: 25px;
+  position: relative;
+  margin-top: -75vh;
+  margin-left: 2.5vw;
+}
+
+#loading_screen {
+  width: 15vw;
+  height: 24.5vh;
+  border: solid black 3px;
+  background-color: #d863c8;
+  position: relative;
+  margin-top: -27.55vh;
+  margin-left: 4.05vw;
+  z-index: 3;
 }
