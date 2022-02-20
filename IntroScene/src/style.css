@@ -9,7 +9,7 @@ body {
   height: 100%;
 }
 
-body{
+body {
   background-image: url("../assets/background_mieux.png");
   background-size: contain;
   background-position: center;
@@ -18,31 +18,36 @@ body{
   align-items: center;
 }
 
-#gameboy{
+#gameboy {
   position: relative;
   animation: 1.5s ease-in-out infinite alternate slidein;
 }
 
 @keyframes slidein {
-  from { transform: translateY(0); }
-  to   { transform: translateY(40px)}
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(40px);
+  }
 }
 
-#cursor{
+#cursor {
   position: absolute;
-  top: 25.5vh;
-  left: 8.45vw;
-  height : 18px;
-  width : 12px;
+  top: 24.4vh;
+  left: 9.25vw;
+  height: 18px;
+  width: 12px;
   animation: 0.75s linear infinite alternate blink_cursor;
 }
 
 @keyframes blink_cursor {
-  0%,50% {
+  0%,
+  50% {
     opacity: 0;
   }
-  51%,100% {
+  51%,
+  100% {
     opacity: 1;
   }
 }
-
